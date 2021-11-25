@@ -33,6 +33,9 @@ First, enter the artist's or band's name and then enter the song's name. That's 
 
 ![Screenshot 1](https://i.imgur.com/qlKxPo7.png)
 
+---
+![Screenshot 2](https://i.imgur.com/th5jzcn.png)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
