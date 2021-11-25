@@ -1,9 +1,19 @@
-import tkinter
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# ----------------------------------------------------------------------------
+# Created By  : serhank
+# Created Date: 25/11/2021
+# version ='1.0'
+# ----------------------------------------------------------------------------
 
+import tkinter
 from Lyrics import Lyrics
 from tkinter import *
 
 class GUI(object):
+    """
+    Creates a Desktop GUI.
+    """
     def __init__(self):
         """ Calls main window. """
         self.main_window()
@@ -11,7 +21,7 @@ class GUI(object):
     def main_window(self):
         """Creates search window and redirects to the lyrics screen. """
 
-        window = Tk(className=' Get Lyrics v1.1')
+        window = Tk(className=' Get Lyrics v1.0')
         window.geometry('350x100')
 
         Label(window, text="Enter artist's/band's name").grid(row=1, column=0)
