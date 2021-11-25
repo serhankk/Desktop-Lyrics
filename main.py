@@ -40,27 +40,24 @@ class GUI(object):
             Label(newWindow, text=lyrics).pack()
 
         informations = []
-        def get_button(t, info_list: list=informations):
+        def get_button(info_list: list=informations):
+            """
+            :param info_list: In order to get the variables outside of the function.
+            :return: Returns nothing but calls the window that will display the lyrics.
+            """
             while True:
-                search = Lyrics()
+                search = Lyrics() # Create the object.
 
                 info_list.append([artist.get(), song.get()])
-                print(info_list)
+                # print(info_list) # Not neccessary.. For now.
                 lyrics = search.get_lyrics(info_list[0][0], info_list[0][1])
                 openNewWindow(info_list[0][0], info_list[0][1], lyrics)
                 info_list.clear()
                 break
 
-
-        tkinter.Button(window, text='Search', command= lambda button= 'Button Clicked': get_button(artist)).grid(row=3, column=1, sticky=tkinter.W, pady=0)
-
-
-
-
-
+        tkinter.Button(window,
+                       text='Search',
+                       command= lambda button= 'Button Clicked': get_button()).grid(row=3, column=1, sticky=tkinter.W, pady=0)
 
 uyg = GUI()
-
-
-
 mainloop()
