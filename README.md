@@ -31,7 +31,7 @@ python3 main.py
 ## Usage
 First, enter the artist's or band's name and then enter the song's name. That's all.. :)
 
-![alt text](https://drive.google.com/file/d/1_lZVeerdrEqEokX0BkozQnGtxuKo5TCz/view?usp=sharing)
+![Screenshot 1](https://i.imgur.com/qlKxPo7.png)
 
 
 ## License
